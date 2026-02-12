@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Log</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        background:#f4f7fb;
+    }
+
+    header{
+        background:#2c3e50;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        background:#34495e;
+    }
+
+    nav a{
+        color:white;
+        padding:15px 25px;
+        text-decoration:none;
+        transition:0.3s;
+    }
+
+    nav a:hover{
+        background:#1abc9c;
+    }
+
+    section{
+        display:none;
+        padding:25px;
+        max-width:800px;
+        margin:auto;
+        background:white;
+        margin-top:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section:target{
+        display:block;
+    }
+
+    #home{
+        display:block;
+    }
+
+    h2{
+        color:#2c3e50;
+    }
+
+    footer{
+        text-align:center;
+        padding:15px;
+        margin-top:30px;
+        background:#2c3e50;
+        color:white;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Traveller's Log</h1>
+    <p>Sharing My Journey Stories</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#trip1">Trip 1</a>
+    <a href="#trip2">Trip 2</a>
+    <a href="#trip3">Trip 3</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>This travel log contains three memorable journeys. Use the navigation bar to explore each story.</p>
+</section>
+
+<section id="trip1">
+    <h2>Trip 1 – Mountain Adventure</h2>
+    <p><b>Destination:</b> Manali</p>
+    <p><b>Highlights:</b> Snow trekking, river rafting</p>
+    <p><b>Memorable Experience:</b> Watching sunrise from the mountain peak.</p>
+    <p><b>Challenge:</b> Cold weather and steep climbs.</p>
+    <p><b>Lesson Learned:</b> Preparation makes adventure safer and more fun.</p>
+</section>
+
+<section id="trip2">
+    <h2>Trip 2 – Beach Escape</h2>
+    <p><b>Destination:</b> Goa</p>
+    <p><b>Highlights:</b> Beaches, seafood, nightlife</p>
+    <p><b>Memorable Experience:</b> Sunset cruise with live music.</p>
+    <p><b>Challenge:</b> Sunburn from staying too long at the beach.</p>
+    <p><b>Lesson Learned:</b> Always carry sunscreen.</p>
+</section>
+
+<section id="trip3">
+    <h2>Trip 3 – Cultural Journey</h2>
+    <p><b>Destination:</b> Jaipur</p>
+    <p><b>Highlights:</b> Forts, palaces, local markets</p>
+    <p><b>Memorable Experience:</b> Visiting Amer Fort.</p>
+    <p><b>Challenge:</b> Navigating crowded streets.</p>
+    <p><b>Lesson Learned:</b> Local guides can enhance the experience.</p>
+</section>
+
+<footer>
+    © 2026 Traveller Log | Designed with HTML & CSS
+</footer>
+
+</body>
+</html>
