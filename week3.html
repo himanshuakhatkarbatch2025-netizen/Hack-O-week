@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f7;
+    margin:0;
+}
+
+.container{
+    max-width:500px;
+    background:white;
+    margin:50px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0 18px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#007BFF;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>College Tech Fest Registration</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>College Name</label>
+<input type="text" placeholder="Enter college name">
+
+<label>Event Category</label>
+<select required>
+<option value="">Select Event</option>
+<option>Coding Competition</option>
+<option>Robotics</option>
+<option>Hackathon</option>
+<option>Quiz</option>
+</select>
+
+<label>Gender</label>
+<select required>
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<label>Comments</label>
+<textarea rows="3" placeholder="Any message..."></textarea>
+
+<button type="submit">Register Now</button>
+
+</form>
+</div>
+
+</body>
+</html>
