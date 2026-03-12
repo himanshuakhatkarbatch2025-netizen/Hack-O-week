@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather Info Panel</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+h1{
+    color:white;
+    margin-bottom:40px;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+}
+
+.card{
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.2);
+    border-radius:15px;
+    padding:25px;
+    width:200px;
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.3);
+}
+
+.city{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.icon{
+    font-size:40px;
+    margin:10px 0;
+}
+
+.temp{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.condition{
+    font-size:16px;
+    opacity:0.9;
+}
+
+.update{
+    margin-top:30px;
+    color:white;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🌤 Weather Information Panel</h1>
+
+<div class="container">
+
+<div class="card">
+<div class="city">Pune</div>
+<div class="icon">☀️</div>
+<div class="temp">30°C</div>
+<div class="condition">Sunny</div>
+</div>
+
+<div class="card">
+<div class="city">Mumbai</div>
+<div class="icon">🌧</div>
+<div class="temp">32°C</div>
+<div class="condition">Rainy</div>
+</div>
+
+<div class="card">
+<div class="city">Delhi</div>
+<div class="icon">☁️</div>
+<div class="temp">28°C</div>
+<div class="condition">Cloudy</div>
+</div>
+
+</div>
+
+<div class="update">
+Last Updated: Static Data
+</div>
+
+</body>
+</html>
